@@ -115,6 +115,7 @@ namespace TimeTracker.Tests
             }
         }
 
+        [Test]
         [TestCaseSource(nameof(GetByIdData))]
         public async Task ProjectService_GetById(int id, Project expected)
         {
